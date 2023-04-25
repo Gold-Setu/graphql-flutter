@@ -17,7 +17,7 @@ import 'package:graphql/client.dart' show HiveStore;
 Future<void> initHiveForFlutter(
     {String? subDir,
     Iterable<String> boxes = const [HiveStore.defaultBoxName]}) async {
-  WidgetsFlutterBinding.ensureInitialized();
+  //WidgetsFlutterBinding.ensureInitialized();
   if (!kIsWeb) {
     var appDir = await getApplicationDocumentsDirectory();
     var path = appDir.path;
